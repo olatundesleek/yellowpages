@@ -1,0 +1,97 @@
+.Heading
+{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+body
+{
+    background-image: url(ground.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.Container
+{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+    background: #0f0;
+}
+.Container .box
+{
+    position: relative;
+    width: 370px;
+    height: 270px;
+    background: rgb(252, 252, 245);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.Container .box .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    transition: 0.5s;
+    z-index: 1;
+}
+.Container .box:hover .icon
+{
+
+    top: 20px;
+    right: 10px; 
+    height: 80px;
+    border-radius: 50%;
+}
+
+.Container .box .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    scale(5)
+}
+
+.Container .box .Content
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20%;
+    transition: 0.5s;
+    opacity: 0;
+    box-sizing: border-box
+    
+
+}
+.Container .box:hover .Content
+{
+    top: 100px;
+    opacity: 1;
+
+}
+.Container .box .Content h2
+{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    color: blue
+}
+.Container .box:nth-child(1) .icon
+{
+    background: purple;
+
+}
+.Container .box:nth-child(3) .icon
+{
+    background: chocolate;
+}
